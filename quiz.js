@@ -38,7 +38,7 @@ if (theme == "vocabulary") {
   questionInfoEl.innerText = `Question ${questionI + 1} / ${questionsN}`;
   submitBtn.addEventListener("click", () => {
     question.answers.forEach((ans) => {
-      if (answerEl.value.toLowerCase() == ans)
+      if (answerEl.value.toLowerCase().trim() == ans)
         scoreEl.innerText = `Score: ${++score}`;
     });
     uans.push(answerEl.value.toLowerCase());
@@ -78,7 +78,7 @@ if (theme == "vocabulary") {
   questionInfoEl.innerText = `Question ${questionI + 1} / ${questionsN}`;
   submitBtn.addEventListener("click", () => {
     question.answers.forEach((ans) => {
-      if (answerEl.value.toLowerCase() == ans)
+      if (answerEl.value.toLowerCase().trim() == ans)
         scoreEl.innerText = `Score: ${++score}`;
     });
     uans.push(answerEl.value.toLowerCase());
@@ -118,7 +118,7 @@ if (theme == "vocabulary") {
   questionInfoEl.innerText = `Question ${questionI + 1} / ${questionsN}`;
   submitBtn.addEventListener("click", () => {
     question.answers.forEach((ans) => {
-      if (answerEl.value.toLowerCase() == ans)
+      if (answerEl.value.toLowerCase().trim() == ans)
         scoreEl.innerText = `Score: ${++score}`;
     });
     uans.push(answerEl.value.toLowerCase());
@@ -159,7 +159,7 @@ if (theme == "internet") {
   questionInfoEl.innerText = `Question ${questionI + 1} / ${questionsN}`;
   submitBtn.addEventListener("click", () => {
     question.answers.forEach((ans) => {
-      if (answerEl.value.toLowerCase() == ans)
+      if (answerEl.value.toLowerCase().trim() == ans)
         scoreEl.innerText = `Score: ${++score}`;
     });
     uans.push(answerEl.value.toLowerCase());
